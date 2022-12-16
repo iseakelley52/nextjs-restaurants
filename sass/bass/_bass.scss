@@ -1,0 +1,27 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+h1, h2, h3, h4, h5, h6, p, ul, li, ol {
+    margin: 0;
+    padding: 0; 
+    font: inherit; 
+}
+
+* {
+    box-sizing: border-box; //invert padding
+}
+
+img {
+    vertical-align: top; 
+}
+
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    background-color: white; 
+    color: balck; 
+    font-family: vars.$font_primary;
+}

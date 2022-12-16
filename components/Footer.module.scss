@@ -1,0 +1,8 @@
+@use '../sass/abstracts/vars';
+
+
+.footer {
+    background-color: vars.$color_green;
+    color: black;
+    padding: 2rem 0; 
+}
