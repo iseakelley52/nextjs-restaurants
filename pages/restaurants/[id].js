@@ -65,9 +65,9 @@ const RestaurantPage = ({restaurantData}) => {
                     <Fragment>
                         <Heading level="2" marginBottom="1" marginTop="1">
                                 Menu</Heading>
-                    {menu.menuItems.map((menuItemObj)=> {
+                    {menu.menuItems.map((menuItemObj, index)=> {
                         const {menuItem } = menuItemObj;
-                        return <MenuItem data={menuItem}/>
+                        return <MenuItem key={index} data={menuItem}/>
                     })}
                     </Fragment> }
                 </Col> 
