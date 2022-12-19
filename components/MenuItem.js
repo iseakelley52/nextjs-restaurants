@@ -4,19 +4,19 @@ import Paragraph  from './Paragraph'
 import styles from './MenuItem.module.scss'
 
 const MenuItem = ({data}) => {
-    const {menuImage, menuDescription, menuPrice, menuTitle} = data;
+    const {image, description, price, title} = data;
     return <article className={styles.menuItem}>
                <Image 
-                    src={menuImage.sourceUrl}
-                    alt={menuImage.altText}
-                    width={menuImage.mediaDetails.width}
-                    height={menuImage.mediaDetails.height}
-                    className ={styles.menuImage}
+                    src={image.sourceUrl}
+                    alt={image.altText}
+                    width={image.mediaDetails.width}
+                    height={image.mediaDetails.height}
+                    className ={styles.image}
                 />
                 <div className={styles.menuContent}>
-                    <Heading level="3" marginBottom="1">{menuTitle}</Heading>
-                    <Heading level="4" marginBottom="1">${menuPrice}</Heading>
-                    <Heading>{menuDescription}</Heading>
+                    <Heading level="3" marginBottom="1">{title}</Heading>
+                    <Heading level="4" marginBottom="1">${price}</Heading>
+                    <Heading>{description}</Heading>
                 </div>
             </article>
 }
